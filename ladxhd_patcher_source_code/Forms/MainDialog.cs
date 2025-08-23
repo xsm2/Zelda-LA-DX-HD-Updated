@@ -12,25 +12,35 @@ using System.Windows.Forms;
 
 namespace LADXHD_Patcher
 {
-    public partial class MainDialog : Form
+    public partial class Form_MainForm : Form
     {
-        public MainDialog()
+        public Form_MainForm()
         {
             InitializeComponent();
         }
 
+        public void ToggleDialog(bool toggle)
+        {
+            button_Patch.Enabled = toggle;
+            button_ChangeLog.Enabled = toggle;
+            button_Exit.Enabled = toggle;
+        }
+
+        private void button_Patch_Click(object sender, EventArgs e)
+        {
+            if (Config.Validate())
+                Functions.StartPatching();
+        }
+
         private void button_ChangeLog_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/BigheadSMZ/Links-Awakening-DX-HD/blob/master/CHANGELOG.md");
+            Process.Start("https://github.com/BigheadSMZ/Zelda-LA-DX-HD-Updated/blob/main/CHANGELOG.md");
         }
 
         private void button_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void button_Patch_Click(object sender, EventArgs e)
-        {
-            Functions.StartPatching();
-        }
+
     }
 }

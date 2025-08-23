@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
 
-namespace ClairObscurConfig
+namespace LADXHD_Patcher
 {
     public partial class Form_OkayForm : Form
     {

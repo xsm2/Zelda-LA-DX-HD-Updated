@@ -63,6 +63,76 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] BBlurH_xnb {
+            get {
+                object obj = ResourceManager.GetObject("BBlurH.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] BBlurV_xnb {
+            get {
+                object obj = ResourceManager.GetObject("BBlurV.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] BlurH_xnb {
+            get {
+                object obj = ResourceManager.GetObject("BlurH.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] BlurV_xnb {
+            get {
+                object obj = ResourceManager.GetObject("BlurV.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] CircleShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("CircleShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ColorCloud_xnb {
+            get {
+                object obj = ResourceManager.GetObject("ColorCloud.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ColorShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("ColorShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] credits_font_xnb {
             get {
                 object obj = ResourceManager.GetObject("credits font.xnb", resourceCulture);
@@ -76,6 +146,16 @@ namespace LADXHD_Patcher.Properties {
         internal static byte[] credits_header_font_xnb {
             get {
                 object obj = ResourceManager.GetObject("credits header font.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] DamageShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("DamageShader.xnb", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -103,29 +183,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dreamShrine01_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dreamShrine01.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon1_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon1.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon1_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon1.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -143,29 +203,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon2_2d_2_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon2_2d_2.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon5_2d_1_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon5_2d_1.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon5_2d_1_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon5_2d_1.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -183,29 +223,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon5_2d_2_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon5_2d_2.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon5_2d_3_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon5_2d_3.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon5_2d_3_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon5_2d_3.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -223,29 +243,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon5_2d_4_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon5_2d_4.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon6_2d_1_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon6_2d_1.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon6_2d_1_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon6_2d_1.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -263,29 +263,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon6_2d_2_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon6_2d_2.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon6_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon6.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon6_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon6.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -303,29 +283,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon8_2d_1_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_1.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon8_2d_2_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon8_2d_2.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon8_2d_2_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_2.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -343,29 +303,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon8_2d_3_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_3.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon8_2d_4_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon8_2d_4.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon8_2d_4_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_4.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -383,29 +323,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon8_2d_5_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_5.map.data", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] dungeon8_2d_6_map {
             get {
                 object obj = ResourceManager.GetObject("dungeon8_2d_6.map", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] dungeon8_2d_6_map_data {
-            get {
-                object obj = ResourceManager.GetObject("dungeon8_2d_6.map.data", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -423,9 +343,39 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] dungeon8_map_data {
+        internal static byte[] editor_font_xnb {
             get {
-                object obj = ResourceManager.GetObject("dungeon8.map.data", resourceCulture);
+                object obj = ResourceManager.GetObject("editor font.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] editor_mono_font_xnb {
+            get {
+                object obj = ResourceManager.GetObject("editor mono font.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] editor_small_mono_font_xnb {
+            get {
+                object obj = ResourceManager.GetObject("editor small mono font.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] EffectBlur_xnb {
+            get {
+                object obj = ResourceManager.GetObject("EffectBlur.xnb", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -443,9 +393,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] egg_lower_floor_map_data {
+        internal static byte[] eng_lng {
             get {
-                object obj = ResourceManager.GetObject("egg_lower_floor.map.data", resourceCulture);
+                object obj = ResourceManager.GetObject("eng.lng", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -453,9 +403,19 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] eng_lng {
+        internal static byte[] FullShadowEffect_xnb {
             get {
-                object obj = ResourceManager.GetObject("eng.lng", resourceCulture);
+                object obj = ResourceManager.GetObject("FullShadowEffect.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] headerFont_xnb {
+            get {
+                object obj = ResourceManager.GetObject("headerFont.xnb", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -493,6 +453,26 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] LightFadeShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("LightFadeShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] LightShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("LightShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Link_s_Awakening_DX_HD_exe {
             get {
                 object obj = ResourceManager.GetObject("Link\'s Awakening DX HD.exe", resourceCulture);
@@ -513,9 +493,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] overworld_map {
+        internal static byte[] newHeaderFont_xnb {
             get {
-                object obj = ResourceManager.GetObject("overworld.map", resourceCulture);
+                object obj = ResourceManager.GetObject("newHeaderFont.xnb", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -523,9 +503,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] overworld_map_data {
+        internal static byte[] overworld_map {
             get {
-                object obj = ResourceManager.GetObject("overworld.map.data", resourceCulture);
+                object obj = ResourceManager.GetObject("overworld.map", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -543,6 +523,36 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] RoundedCorner_xnb {
+            get {
+                object obj = ResourceManager.GetObject("RoundedCorner.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] RoundedCornerEffectBlur_xnb {
+            get {
+                object obj = ResourceManager.GetObject("RoundedCornerEffectBlur.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] SaturationFilter_xnb {
+            get {
+                object obj = ResourceManager.GetObject("SaturationFilter.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] scripts_zScript {
             get {
                 object obj = ResourceManager.GetObject("scripts.zScript", resourceCulture);
@@ -553,9 +563,9 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] xdelta3_exe {
+        internal static byte[] ShockEffect_xnb {
             get {
-                object obj = ResourceManager.GetObject("xdelta3.exe", resourceCulture);
+                object obj = ResourceManager.GetObject("ShockEffect.xnb", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -563,9 +573,69 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] xdelta3_patch {
+        internal static byte[] smallFont_xnb {
             get {
-                object obj = ResourceManager.GetObject("xdelta3 patch", resourceCulture);
+                object obj = ResourceManager.GetObject("smallFont.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ThanosShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("ThanosShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ui_atlas {
+            get {
+                object obj = ResourceManager.GetObject("ui.atlas", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ui_png {
+            get {
+                object obj = ResourceManager.GetObject("ui.png", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WaleShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("WaleShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WobbleShader_xnb {
+            get {
+                object obj = ResourceManager.GetObject("WobbleShader.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] xdelta3_exe {
+            get {
+                object obj = ResourceManager.GetObject("xdelta3.exe", resourceCulture);
                 return ((byte[])(obj));
             }
         }
