@@ -35,14 +35,15 @@
 
 $OldGamePath = "C:\Users\Bighead\Desktop\original"
 $NewGamePath = "C:\Users\Bighead\Desktop\updated"
+$GameVersion = "1.1.3"
 
 #========================================================================================================================================
 # SETUP XDELTA & OUTPUTS
 #========================================================================================================================================
 
 $BaseFolder  = Split-Path $script:MyInvocation.MyCommand.Path
-$PatchFolder = Join-Path $BaseFolder "patches"
 $XDelta3     = Join-Path $BaseFolder "xdelta3.exe"
+$PatchFolder = $BaseFolder + "\Resources\v" + $GameVersion + " Patches"
 
 #========================================================================================================================================
 # VERIFICATION
