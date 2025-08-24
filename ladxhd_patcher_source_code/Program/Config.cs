@@ -26,31 +26,25 @@ namespace LADXHD_Patcher
 
         public static bool Validate()
         {
-            string md5Hash = Functions.CalculateHash(zeldaEXE, "MD5");
-            string Title = "";
-            string Message = "";
-
-            if (md5Hash == oldHash)
-            {
-                return true;
-            }
             if (!zeldaEXE.TestPath())
             {
-                Title = "Game Executable Not Found";
-                Message = "Could not find \"Link's Awakening DX HD.exe\" to patch. Copy this patcher executable to the folder of the original release of v1.0.0 and run it from there.";
-                Forms.okayDialog.Display(Title, Message, 250, 40, 27, 10, 15);
+                Forms.okayDialog.Display("Game Executable Not Found", 250, 40, 27, 10, 15, 
+                    "Could not find \"Link's Awakening DX HD.exe\" to patch. Copy this patcher executable to the folder of the original release of v1.0.0 and run it from there.");
                 return false;
             }
+            string md5Hash = Functions.CalculateHash(zeldaEXE, "MD5");
+
+            if (md5Hash == oldHash)
+                return true;
+
             if (md5Hash == newHash)
             {
-                Title = "Already Patched";
-                Message = "The game is already at v1.1.0 so no patching is needed. Close this patcher and launch the game!";
-                Forms.okayDialog.Display(Title, Message, 260, 40, 30, 16, 10);
+                Forms.okayDialog.Display("Already Patched", 260, 40, 30, 16, 10, 
+                    "The game is already at v1.1.0 so no patching is needed. Close this patcher and launch the game!");
                 return false;
             }
-            Title = "Unknown Error";
-            Message = "Something unexpected went wrong. Make sure the game is actually the original v1.0.0 release.";
-            Forms.okayDialog.Display(Title, Message, 260, 40, 30, 16, 10);
+            Forms.okayDialog.Display("Unknown Error", 260, 40, 30, 16, 10, 
+                "Something unexpected went wrong. Make sure the game is actually the original v1.0.0 release.");
             return false;
         }
     }

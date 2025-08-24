@@ -2,39 +2,43 @@
 # INSTRUCTIONS
 #========================================================================================================================================
 <#
-  Purpose:
+  Info & Purpose:
   - Generate xdelta patches to update v1.0.0 to the latest build.
+  - XDelta3 patches must share a name with the file they are patching + ".xdelta" extension.
+  - For example, the file "musicOverworld.data" the patch should be "musicOverworld.data.xdelta"
 
   Requirements:
   - Original v1.0.0 of the game.
   - New build of the game.
+  - Both must be fully built and playable.
 
   How to use:
-  - Set the paths to the games below in CONFIGURATION.
+  - Set the paths to the games below in "CONFIGURATION."
   - Version 1.0.0 should be set to "OldGamePath".
   - The new build should be set to "NewGamePath".
   - Right click this script, select "Run with PowerShell".
-  - It will generate a "patches" folder in the same folder as this script.
+  - Generated patches can be found in the "Resources" folder.
+  - The folder in "Resources" uses the "$GameVersion" set below.
   - Obviously, the xdelta patches can be found in this folder.
 
   What to do with patches:
   - Open "LADXHD_Patcher.sln" in Visual Studio 2022.
-  - In Solution Explorer, go to "Properties > Resources.resx"
+  - In Solution Explorer, go to "Properties >> Resources.resx"
   - Double click "Resources.resx" to open it in a window.
-  - Select all xdelta3 patches and delete them.
-  - Drag and drop all the new patches from the "patches" folder.
+  - Select all "xdelta3 patches" currently in Resources.resx and delete them.
+  - Drag and drop all the new patches from the "patches" folder in "Resources.resx".
   - For easier identification and sorting later, set Neutral Comment to "xdelta3 patch".
 
   Now what?:
-  - Edit the form "MainDialog" to set the new version of the game.
-  - Build the project. This will create a new patcher.
+  - Edit the version number in "Program >> Config" to set the new version of the game.
+  - Build the project. This will create a new patcher. All patches are handled automatically.
 #>
 #========================================================================================================================================
 # CONFIGURATION
 #========================================================================================================================================
 
-$OldGamePath = "C:\Users\Bighead\Desktop\original"
-$NewGamePath = "C:\Users\Bighead\Desktop\updated"
+$OldGamePath = "C:\Users\Bighead\source\repos\Zelda-LA-DX-HD_Stuff\original"
+$NewGamePath = "C:\Users\Bighead\source\repos\Zelda-LA-DX-HD_Stuff\updated"
 $GameVersion = "1.1.3"
 
 #========================================================================================================================================
@@ -43,33 +47,36 @@ $GameVersion = "1.1.3"
 
 $BaseFolder  = Split-Path $script:MyInvocation.MyCommand.Path
 $XDelta3     = Join-Path $BaseFolder "xdelta3.exe"
-$PatchFolder = $BaseFolder + "\Resources\v" + $GameVersion + " Patches"
+$PatchFolder = Join-Path $BaseFolder ("\Resources\v" + $GameVersion + " Patches")
+
+#========================================================================================================================================
+# MISCELLANEOUS
+#========================================================================================================================================
+$host.UI.RawUI.WindowTitle = "Link's Awakening DX HD XDelta Patch Generation Script"
+
+function PauseBeforeClose
+{
+    Write-Host ""
+    Write-Host "Press any key to close this window."
+    [void][System.Console]::ReadKey()
+    Exit
+}
 
 #========================================================================================================================================
 # VERIFICATION
 #========================================================================================================================================
 
-function Pause-IfInteractive {
-    if ($Host.Name -eq 'ConsoleHost') { return }
-    Write-Host ""
-    Write-Host "Press any key to close this window."
-    [void][System.Console]::ReadKey()
-}
-
 if (!(Test-Path (Join-Path $OldGamePath "Link's Awakening DX HD.exe"))) {
     Write-Host "Invalid path for original game (OldGamePath)."
-    Pause-IfInteractive
-    Exit
+    PauseBeforeClose
 }
 if (!(Test-Path (Join-Path $NewGamePath "Link's Awakening DX HD.exe"))) {
     Write-Host "Invalid path for updated game (NewGamePath)."
-    Pause-IfInteractive
-    Exit
+    PauseBeforeClose
 }
 if (!(Test-Path $XDelta3)) {
     Write-Host "Missing xdelta3.exe in script folder."
-    Pause-IfInteractive
-    Exit
+    PauseBeforeClose
 }
 
 #========================================================================================================================================
@@ -83,6 +90,9 @@ if (!(Test-Path $PatchFolder)) {
 #========================================================================================================================================
 # GENERATE PATCHES
 #========================================================================================================================================
+
+Write-Host ("Generating new patches for Link's Awakening DX HD v" + $GameVersion + "...")
+Write-Host ""
 
 foreach ($file in Get-ChildItem -LiteralPath $NewGamePath -Recurse -File) 
 {
@@ -100,10 +110,11 @@ foreach ($file in Get-ChildItem -LiteralPath $NewGamePath -Recurse -File)
         $PatchFile = Join-Path $PatchFolder ($file.Name + ".xdelta")
 
         Write-Host ("Generating patch for: " + $file.Name)
-        & $XDelta3 -e -s $OldFilePath $NewFilePath $PatchFile
+        & $XDelta3 -f -e -s $OldFilePath $NewFilePath $PatchFile
     }
 }
-
 Write-Host ""
-Write-Host "Patch generation complete."
-Pause-IfInteractive
+Write-Host "Patch generation complete. Patches can be found in folder:"
+Write-Host $PatchFolder
+Write-Host ""
+PauseBeforeClose

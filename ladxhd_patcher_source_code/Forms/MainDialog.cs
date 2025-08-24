@@ -14,9 +14,17 @@ namespace LADXHD_Patcher
 {
     public partial class Form_MainForm : Form
     {
+        public AdvRichTextBox TextBox_Info;
+        public TransparentLabel TextBox_NoClick;
+
         public Form_MainForm()
         {
             InitializeComponent();
+        }
+
+        private void Form_MainForm_Load(object sender, EventArgs e)
+        {
+            Forms.CreatePatcherText();
         }
 
         public void ToggleDialog(bool toggle)
@@ -41,6 +49,6 @@ namespace LADXHD_Patcher
         {
             this.Close();
         }
-
     }
+
 }

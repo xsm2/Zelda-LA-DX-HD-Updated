@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_MainForm));
             this.button_Patch = new System.Windows.Forms.Button();
             this.button_Exit = new System.Windows.Forms.Button();
-            this.Label_Info = new System.Windows.Forms.Label();
             this.button_ChangeLog = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -39,7 +38,7 @@
             // 
             // button_Patch
             // 
-            this.button_Patch.Location = new System.Drawing.Point(9, 198);
+            this.button_Patch.Location = new System.Drawing.Point(9, 222);
             this.button_Patch.Name = "button_Patch";
             this.button_Patch.Size = new System.Drawing.Size(100, 30);
             this.button_Patch.TabIndex = 0;
@@ -49,7 +48,7 @@
             // 
             // button_Exit
             // 
-            this.button_Exit.Location = new System.Drawing.Point(225, 198);
+            this.button_Exit.Location = new System.Drawing.Point(225, 222);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(100, 30);
             this.button_Exit.TabIndex = 1;
@@ -57,18 +56,9 @@
             this.button_Exit.UseVisualStyleBackColor = true;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
-            // Label_Info
-            // 
-            this.Label_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Info.Location = new System.Drawing.Point(12, 133);
-            this.Label_Info.Name = "Label_Info";
-            this.Label_Info.Size = new System.Drawing.Size(311, 60);
-            this.Label_Info.TabIndex = 2;
-            this.Label_Info.Text = resources.GetString("Label_Info.Text");
-            // 
             // button_ChangeLog
             // 
-            this.button_ChangeLog.Location = new System.Drawing.Point(117, 198);
+            this.button_ChangeLog.Location = new System.Drawing.Point(117, 222);
             this.button_ChangeLog.Name = "button_ChangeLog";
             this.button_ChangeLog.Size = new System.Drawing.Size(100, 30);
             this.button_ChangeLog.TabIndex = 3;
@@ -78,7 +68,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.ErrorImage = global::LADXHD_Patcher.Properties.Resources.la;
             this.pictureBox1.Image = global::LADXHD_Patcher.Properties.Resources.la;
+            this.pictureBox1.InitialImage = global::LADXHD_Patcher.Properties.Resources.la;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(334, 123);
@@ -89,10 +81,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 239);
+            this.ClientSize = new System.Drawing.Size(335, 261);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_ChangeLog);
-            this.Controls.Add(this.Label_Info);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.button_Patch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -102,18 +93,17 @@
             this.Name = "Form_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Link\'s Awakening DX HD Patcher vX.X.X";
+            this.Load += new System.EventHandler(this.Form_MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.Button button_Patch;
         private System.Windows.Forms.Button button_Exit;
         private System.Windows.Forms.Button button_ChangeLog;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label Label_Info;
     }
 }
 

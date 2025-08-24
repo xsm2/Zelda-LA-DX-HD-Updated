@@ -35,9 +35,14 @@ namespace LADXHD_Patcher
 
                 patchedFile.MovePath(fileItem.FullName, true);
             }
-            string Title = "Patching Complete";
-            string Message = "Patching Link's Awakening DX HD v1.0.0 was successful. The game was updated to v" + Config.version + ".";
-            Forms.okayDialog.Display(Title, Message, 260, 40, 34, 16, 10);
+            Forms.okayDialog.Display("Patching Complete", 260, 40, 34, 16, 10, 
+                "Patching Link's Awakening DX HD v1.0.0 was successful. The game was updated to v" + Config.version + ".");
+        }
+
+        public static bool FinalVerify()
+        {
+            return Forms.yesNoDialog.Display("Patch v1.0.0 to " + Config.version, 260, 40, 28, 16, true, 
+                "Are you sure you wish to patch the game to v" + Config.version + "? Make sure you have a backup before continuing.");
         }
 
         public static void StartPatching()

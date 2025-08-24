@@ -55,9 +55,21 @@
     <Compile Include="Forms\OkayForm.Designer.cs">
       <DependentUpon>OkayForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\YesNoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YesNoForm.Designer.cs">
+      <DependentUpon>YesNoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvControls\AdvRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Imported\Extensions.cs" />
     <Compile Include="Imported\FileItem.cs" />
     <Compile Include="Imported\Resources.cs" />
+    <Compile Include="AdvControls\TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program\Config.cs" />
     <Compile Include="Program\Forms.cs" />
     <Compile Include="Program\Functions.cs" />
@@ -70,11 +82,17 @@
     <Compile Include="Initialization.cs" />
     <Compile Include="Program\XDelta3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdvControls\AdvRichTextBox.resx">
+      <DependentUpon>AdvRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainDialog.resx">
       <DependentUpon>MainDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkayForm.resx">
       <DependentUpon>OkayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YesNoForm.resx">
+      <DependentUpon>YesNoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\la.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
