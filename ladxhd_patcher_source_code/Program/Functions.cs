@@ -47,6 +47,8 @@ namespace LADXHD_Patcher
 
         public static void StartPatching()
         {
+            if (!FinalVerify()) return;
+
             Forms.mainDialog.ToggleDialog(false);
             Config.tempFolder.CreatePath(true);
 
