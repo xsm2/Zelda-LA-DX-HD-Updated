@@ -88,6 +88,36 @@ if (!(Test-Path $PatchFolder)) {
 }
 
 #========================================================================================================================================
+# CREATE LANGUAGE PATCHES FROM ENGLISH FILES
+#========================================================================================================================================
+$LanguageFiles  = @("esp","ita","por","rus");
+$LanguageDialog = @("dialog_esp","dialog_ita","dialog_por","dialog_rus");
+
+function CheckCreateLanguageFiles([object]$file)
+{
+    if (($file.Extension -eq ".lng") -and ($file.Name -notlike "*eng.lng"))
+    {
+        $RelativePath = $file.DirectoryName.Substring($OldGamePath.Length).TrimStart('\')
+
+        if ($LanguageFiles.Contains($file.BaseName))
+        {
+            $EngPath = Join-Path $OldGamePath ($RelativePath + "\eng.lng")
+        }
+        elseif ($LanguageDialog.Contains($file.BaseName))
+        {
+            $EngPath = Join-Path $OldGamePath ($RelativePath + "\dialog_eng.lng")
+        }
+        $PatchFile = Join-Path $PatchFolder ($file.Name + ".xdelta")
+
+        Write-Host ("Generating patch for: " + $file.Name)
+        & $XDelta3 -f -e -s $EngPath $file.FullName $PatchFile
+        
+        return $true
+    }
+    return $false
+}
+
+#========================================================================================================================================
 # GENERATE PATCHES
 #========================================================================================================================================
 
@@ -100,6 +130,7 @@ foreach ($file in Get-ChildItem -LiteralPath $NewGamePath -Recurse -File)
     $OldFilePath  = Join-Path $OldGamePath $RelativePath
     $NewFilePath  = $file.FullName
 
+    if (CheckCreateLanguageFiles($file)) { continue };
     if (!(Test-Path $OldFilePath)) { continue }
 
     $OldMD5 = (Get-FileHash -Path $OldFilePath -Algorithm MD5).Hash

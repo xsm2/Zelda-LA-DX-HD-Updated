@@ -173,6 +173,46 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] dialog_esp_lng {
+            get {
+                object obj = ResourceManager.GetObject("dialog_esp.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] dialog_ita_lng {
+            get {
+                object obj = ResourceManager.GetObject("dialog_ita.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] dialog_por_lng {
+            get {
+                object obj = ResourceManager.GetObject("dialog_por.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] dialog_rus_lng {
+            get {
+                object obj = ResourceManager.GetObject("dialog_rus.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] dreamShrine01_map {
             get {
                 object obj = ResourceManager.GetObject("dreamShrine01.map", resourceCulture);
@@ -403,6 +443,16 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] esp_lng {
+            get {
+                object obj = ResourceManager.GetObject("esp.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] FullShadowEffect_xnb {
             get {
                 object obj = ResourceManager.GetObject("FullShadowEffect.xnb", resourceCulture);
@@ -436,6 +486,16 @@ namespace LADXHD_Patcher.Properties {
         internal static byte[] intro_png {
             get {
                 object obj = ResourceManager.GetObject("intro.png", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_lng {
+            get {
+                object obj = ResourceManager.GetObject("ita.lng", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -523,6 +583,16 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] por_lng {
+            get {
+                object obj = ResourceManager.GetObject("por.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] RoundedCorner_xnb {
             get {
                 object obj = ResourceManager.GetObject("RoundedCorner.xnb", resourceCulture);
@@ -536,6 +606,16 @@ namespace LADXHD_Patcher.Properties {
         internal static byte[] RoundedCornerEffectBlur_xnb {
             get {
                 object obj = ResourceManager.GetObject("RoundedCornerEffectBlur.xnb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_lng {
+            get {
+                object obj = ResourceManager.GetObject("rus.lng", resourceCulture);
                 return ((byte[])(obj));
             }
         }
