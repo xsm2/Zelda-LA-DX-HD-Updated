@@ -183,6 +183,16 @@ namespace LADXHD_Patcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] dialog_fre_lng {
+            get {
+                object obj = ResourceManager.GetObject("dialog_fre.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] dialog_ita_lng {
             get {
                 object obj = ResourceManager.GetObject("dialog_ita.lng", resourceCulture);
@@ -446,6 +456,16 @@ namespace LADXHD_Patcher.Properties {
         internal static byte[] esp_lng {
             get {
                 object obj = ResourceManager.GetObject("esp.lng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_lng {
+            get {
+                object obj = ResourceManager.GetObject("fre.lng", resourceCulture);
                 return ((byte[])(obj));
             }
         }

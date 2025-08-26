@@ -5,7 +5,7 @@ namespace LADXHD_Patcher
 {
     /*===================================================================================================================================
      * Powershell has a useful function "Get-Item" which is very similar to "FileInfo" and "DirectoryInfo" in C#. Unfortunately, FileInfo 
-     * does not have the "BaesName" property of a file as readily available as PowerShell's Get-Item. It also over complicates things by
+     * does not have the "BaseName" property of a file as readily available as PowerShell's Get-Item. It also over complicates things by
      * needing to distinguish between "FileInfo" and "DirectoryInfo". This class "FileItem" seeks to remedy these issues.
      *---------------------------------------------------------------------------------------------------------------------------------*/
     public class FileItem

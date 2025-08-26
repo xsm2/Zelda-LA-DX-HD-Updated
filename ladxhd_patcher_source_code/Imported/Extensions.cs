@@ -151,6 +151,21 @@ namespace LADXHD_Patcher
                     File.Copy(SourcePath, DestinationPath);
             }
         }
+
+        public static bool IsPathEmpty(this string SourcePath)
+        {
+            if (File.GetAttributes(SourcePath) == FileAttributes.Directory)
+            {
+                // If it doesn't exist then treat it as "empty".
+                if (!SourcePath.TestPath())
+                    return true;
+
+                return !Directory.EnumerateFileSystemEntries(SourcePath).Any();
+            }
+            // If it's a file then just return false since the file exists.
+            return false;
+        }
+
         public static List<string> GetFiles(this string Path, string SearchPatterns = "*.*", bool Recurse = false)
         {
             // Split the search patterns using the commas into a list.
