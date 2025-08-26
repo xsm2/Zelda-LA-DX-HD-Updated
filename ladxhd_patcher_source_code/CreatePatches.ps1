@@ -39,7 +39,7 @@
 
 $OldGamePath = "C:\Users\Bighead\source\repos\Zelda-LA-DX-HD_Stuff\original"
 $NewGamePath = "C:\Users\Bighead\source\repos\Zelda-LA-DX-HD_Stuff\updated"
-$GameVersion = "1.1.3"
+$GameVersion = "1.1.4"
 
 #========================================================================================================================================
 # SETUP XDELTA & OUTPUTS
@@ -90,8 +90,8 @@ if (!(Test-Path $PatchFolder)) {
 #========================================================================================================================================
 # CREATE LANGUAGE PATCHES FROM ENGLISH FILES
 #========================================================================================================================================
-$LanguageFiles  = @("esp","ita","por","rus");
-$LanguageDialog = @("dialog_esp","dialog_ita","dialog_por","dialog_rus");
+$LanguageFiles  = @("esp","fre","ita","por","rus");
+$LanguageDialog = @("dialog_esp","dialog_fre","dialog_ita","dialog_por","dialog_rus");
 
 function CheckCreateLanguageFiles([object]$file)
 {
