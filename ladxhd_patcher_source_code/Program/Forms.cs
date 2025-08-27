@@ -34,12 +34,12 @@ namespace LADXHD_Patcher
 
             // Set the text of the textbox.
             mainDialog.TextBox_Info.Text = "" +
-            "Patches v1.0.0 of the game to v" + Config.version + " with the \"Patch\" button " +
-            "below. This is the first patcher that backs up the unpatched files " +
-            "so that you will no longer need v1.0.0 every single time. When " +
-            "updating with this version of the patcher, future versions of the " +
-            "patcher can use the stored backup files. Backups are stored in " +
-            "the \"Data\\Backup\" folder. Do not move or delete them! ";
+            "Patches v1.0.0 (or v1.1.4+) to v" + Config.version + " with the \"Patch\" button " +
+            "below. All patchers created since v1.1.4 back up the original " +
+            "files so future  patches no longer require v1.0.0. When updating " +
+            "with this version of the patcher, future versions of the " +
+            "patcher can use the stored backup files. Backups are stored in the " +
+            "\"Data\\Backup\" folder. Do not move or delete them! ";
 
             // Justification must be done after the text has been added for it to take effect.
             mainDialog.TextBox_Info.SelectionAlignment = TextAlign.Justify;
