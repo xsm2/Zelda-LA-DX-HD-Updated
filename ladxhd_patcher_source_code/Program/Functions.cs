@@ -45,7 +45,7 @@ namespace LADXHD_Patcher
 
                 // Move the newly created language file to where the english file was found.
                 string TargetPath = Path.Combine(fileItem.DirectoryName, langFile);
-                patchedFile.MovePath(TargetPath, false);
+                patchedFile.MovePath(TargetPath, true);
             }
         }
 
